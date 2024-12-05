@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test31-coll-98fedf20fbda4c589bbf4df0491143d7-srv
+spec:
+  selector:
+    app: test31-coll-98fedf20fbda4c589bbf4df0491143d7
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9002
+  type: ClusterIP
